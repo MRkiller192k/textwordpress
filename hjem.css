@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;1,100&family=Roboto:ital,wght@0,300;0,400;0,500;1,100;1,500&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-image: url("background\,jpg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.ec-video-game:before {
+    content: "🎮";
+    float: left;
+}
+
+#front-page-container{
+    display: grid;
+    grid-template-areas: "header" 
+                        "main"
+                        "aside" 
+                        "footer";
+    grid-template-columns: 1fr;
+
+}
+
+header{
+    grid-area: header;
+   
+}
+.manycss {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(142, 53, 238);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .manycss-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .manycss a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .manycss a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .manycss .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+
+#main-menu{
+    position: absolute;
+    top:125px;
+    left:0;
+    background-color: #2f2f2f;
+    width: 100%;
+    padding: 1rem;
+}
+
+#main-menu li{
+    list-style: none;
+    
+}
+
+#main-menu a{
+    color: #fff;
+    padding: 1rem 0;
+    display: inline-block;
+    font-size: 1.3rem;
+
+}
+
+main{
+    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+aside{
+    grid-area: aside;
+}
+
+footer{
+    grid-area: footer;
+}
+
+
+header nav a{
+    color:rgb(254, 254, 254);
+    text-decoration: none;
+    
+}
+
+header nav ul li a:hover{
+    text-decoration: underline;
+    
+}
+
+nav{
+    overflow: auto;
+    background-color: #16cae5;
+    background-image: url("pac.man.jpg");
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+    padding: 2rem;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+main article{
+    flex-basis:250px;
+    flex-grow: 1;
+    border: 1px solid #d9d9d9;
+    background-color: rgb(184, 49, 157);
+    padding: 1rem;
+}
+
+article img{
+    width: 100%;
+}
+
+@media only screen and (min-width: 900px){
+    #front-page-container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "header header header" 
+                            "main main aside" 
+                            "footer footer footer";
+        grid-gap: 1rem;
+        grid-row-gap: 1rem;
+    
+    }
+}
+footer{
+    background-color: rgb(80, 80, 80);
+    color: #fff;
+    padding: 3rem 2rem;
+}
+.kontaktOss {
+    line-height: 0.8cm;
+}
+ 
+.AnnsatteKontaktOss {
+    color:rgb(252, 107, 3);
+}
+.AnsatteUtSene{
+    color: rgb(240, 253, 62);
+}
+.overlay-content {
+    color:rgb(252, 107, 3);
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid black;
+    text-align: center;
+    font-size: 30px;
+  }
